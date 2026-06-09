@@ -11,7 +11,7 @@
 	<parent>
 		<groupId>org.springframework.boot</groupId>
 		<artifactId>spring-boot-starter-parent</artifactId>
-		<version>3.5.3</version>  <!-- CVE-2021-22118, CVE-2022-22965
+		<version>2.6.13</version>  <!-- CVE-2021-22118, CVE-2022-22965
 		(Spring4Shell) -->
 		<relativePath/>
 	</parent>

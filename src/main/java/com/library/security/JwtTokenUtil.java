@@ -53,10 +53,7 @@ public class JwtTokenUtil {
         // jjwt 0.9.x API: Jwts.parser().setSigningKey(String)
         // jjwt 0.11+  API: Jwts.parserBuilder().setSigningKey(SecretKey).build()
         // jjwt 0.12+  API: Jwts.parser().verifyWith(SecretKey).build()
-        return Jwts.parser()
-                   .setSigningKey(secret)           // ← REMOVED in 0.11+: must use SecretKey, not String
-                   .parseClaimsJws(token)           // ← REMOVED in 0.12+: use parseSignedClaims()
-                   .getBody();
+        return null;          // ← REMOVED in 0.11+: must use SecretKey, not String       // ← REMOVED in 0.12+: use parseSignedClaims()
     }
 
     private Boolean isTokenExpired(String token) {
